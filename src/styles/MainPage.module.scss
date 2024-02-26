@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Serif&family=Pixelify+Sans&family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=PT+Serif&family=Pixelify+Sans&family=Rubik+Bubbles&display=swap');
+$containerWidth: 100%;
+$AppContainer: 1240px;
+$textSize: 20px;
+$titlesSize: 32px;
+$Border: 1px solid #1F343E;
+$uppertext: uppercase;
+
+@mixin notoSansFont{
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-family: "Noto Sans", sans-serif;
+}
+.container{
+    width: $containerWidth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include notoSansFont;
+}
+.appContainer{
+    width: $AppContainer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    background-color: #FFFFFF;
+    height: 80px;
+    nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            color: #434A54;
+            text-decoration: none;
+            font-size: $textSize;
+            transition: 0.2s linear;
+            &:hover{
+                color: #4EB3E3;
+            }
+        }
+    }
+}
+.main{
+    background-color: #F8CC5D;
+    border-top: $Border;
+    height: fit-content;
+    padding: 50px 0px;
+
+}
+.inputBlock{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding: 5px 10px ;
+    align-items: center;
+    border: $Border;
+    border-radius: 8px;
+    gap: 10px;
+}
+.formSection{
+    width: 40%;
+    border-radius: 15px;
+    height: 600px;
+    padding: 25px 0;
+    background-color: #F8F4F9;
+    border: $Border;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    >div{
+        width: 80%;
+        align-self: center;
+    }
+    >p{
+        margin-left: 10%;
+        font-size: 14px;
+        color: #6D7A80;
+    }
+    form{
+        width: 100%;
+        height: fit-content;
+        padding: 10px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 25px;
+
+        >p{
+            margin: 0;
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+
+        button{
+            width: 100%;
+            height: 50px;
+            border: $Border;
+            border-radius: 8px;
+            padding: 5px 5px;
+            background-color: #4EB3E3;
+            color: #FFFFFF;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        input{
+            width: 70%;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            font-size: 18px;
+            &::placeholder{
+                color: #6D7A80;
+            }
+        }
+    }
+}
+.formTitle{
+    font-size: 44px;
+}
+.formText{
+    font-size: 18px;
+}
+.upperFooter{
+    background-color: #45565E;
+}
+.footer{
+    background-color: #F8F4F9;
+    padding: 50px 0px;
+}
+.main, .upperFooter, .footer{
+    border-top: $Border;
+}
+.uppertext{
+    text-transform: $uppertext;
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.stepSection{
+    width: 50%;
+    padding: 25px 0;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 25px;
+
+    >div{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        >div{
+            width: 60%;
+        }
+        >section{
+            width: 40%;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+.stepTitle{
+    color: #4EB3E3;
+    font-size: 18px;
+    font-weight: 600;
+}
+.stepText{
+    color: #1F343E;
+    width: 80%;
+    font-weight: 600;
+}
+.upperCont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    >a{
+        width: 25%;
+        height: 100px;
+        text-decoration: none;
+    }
+}
+.storeBlock{
+    width: 100%;
+    height: 100px;
+    border-radius: 15px;
+    border: $Border;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    >div{
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        >p:nth-child(1){
+            width: 100%;
+            color: #FFFFFF;
+            font-size: 15px;
+            margin: 0;
+        }
+        >p:nth-child(2){
+            width: 100%;
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+}
+.star{
+    fill: white;
+    width: 25px;
+    height: 25px;
+    transition: 0.2s linear;
+
+    &:hover{
+        cursor: pointer;
+        fill: gold;
+    }
+}
+.starRateCont{
+    display: flex;
+    align-items: center;
+}
+.starBlockCont{
+    display: flex;
+    align-items: center;
+    >p{
+        font-size: 18px;
+        color: #FFFFFF;
+        margin: 0;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+}
+.footerCont{
+    display: flex;
+    justify-content: space-between;
+
+    >section:nth-child(1){
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        >p{
+            color: #6D7A80;
+        }
+    }
+    >section:nth-child(2){
+        width: 20%;
+        a{
+            text-decoration: none;
+            color: #1F343E;
+            font-size: 18px;
+            &:hover{
+                color: #4EB3E3;
+            }
+        }
+        >div{
+            div{
+                width: 100%;
+            }
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 15px;
+        }
+    }
+    >section:nth-child(3){
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+            color: #1F343E;
+            font-size: 18px;
+            &:hover{
+                color: #4EB3E3;
+            }
+        }
+    }
+}
+.spriteCont{
+    display: flex;
+    gap: 10px;
+}
+.spriteBlock{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4EB3E3;
+    border: $Border;
+    border-radius: 5px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+.mailLink{
+    margin-left: 10px;
+}
+.statusFalse{
+    display: none;
+}.complitedFalse{
+    display: none;
+}
+.statusTrue{
+    display: block;
+    color: red;
+}
+.comlitedTrue{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+.lastP{
+    display: none;
+}
+
+.inputBlockDis,
+.copyLinkContDis{
+    display: none;
+}
+
+.copyLinkContEn{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    >div{
+        width: 70%;
+        height: 40px;
+        display: flex;
+        padding: 4px 10px;
+        align-items: center;
+        border: 1px solid #1F343E;
+        border-radius: 8px;
+        margin: 0;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        >input{
+            width: 90%;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            font-size: 18px;
+        }
+    }
+    >button{
+        width: 30%;
+        height: 50px;
+        border: 1px solid #1F343E;
+        border-radius: 8px;
+        padding: 5px 5px;
+        background-color: #4EB3E3;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 500;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .appContainer{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .header{
+        display: none;
+    }
+    .formSection{
+        width: 100%;
+        >div{
+            >div{
+                margin-top: 20px;
+                font-size: 18px;
+                >br{
+                    display: none;
+                }
+            }
+        }
+    }
+    .stepSection{
+        width: 100%;
+        height: auto;
+        >div{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            >section{
+                width: auto;
+                flex: none;
+            }
+            >div{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                p{
+                    text-align: center;
+                    width: 100%;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+        }
+        >div:nth-child(2){
+            flex-wrap: wrap-reverse;
+        }
+    }
+    .formText{
+        font-size: 17px;
+    }
+    .uppertext{
+        font-size: 33px;
+        margin: 0;
+    }
+    .upperCont{
+        height: fit-content;
+        padding: 25px 0px;
+        display: flex;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        >a{
+            width: 100%;
+            >div{
+                >img{
+                    width: 85px;
+                    height: auto;
+                }
+                >div{
+                    width: 55%;
+                    >p:nth-child(1){
+                        font-size: 19px;
+                    }
+                    >p:nth-child(2){
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+        >div{
+            width: 100%;
+            justify-content: space-evenly;
+        }
+    }
+    .footerCont{
+        flex-wrap: wrap;
+        >section:nth-child(1){
+            width: 100%;
+            >p{
+                display: none;
+            }
+            >div{
+                >p{
+                    font-size: 18px;
+                    width: 95%;
+                }
+            }
+        }
+        >section:nth-child(2){
+            width: 100%;            
+        }
+        >section:nth-child(3){
+            width: 100%;
+        }
+    }
+    .lastP{
+        margin-top: 50px;
+        display: block;
+        color: #6D7A80;
+    }
+    .copyLinkContEn{
+        flex-wrap: wrap;
+        row-gap: 20px;
+        >div{
+            width: 100%;
+            border-radius: 8px;
+
+        }
+        >button{
+            width: 100%;
+            border-radius: 8px;
+
+        }
+    }
+}
