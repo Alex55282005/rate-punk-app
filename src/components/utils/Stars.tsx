@@ -1,18 +1,20 @@
 import { FC } from "react";
 import styles from "@/styles/MainPage.module.scss";
+import starStules from "@/components/utils/Stars.module.scss";
 
 
 const Stars: FC = () => {
-    return <div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className={styles.star}>
-            <g data-name="Layer 2"><g data-name="star">
-                <rect width="24" height="24" opacity="0" transform="rotate(90 12 12)"></rect>
-                <path d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63-4.12-4a1 1 0 
-                0 1-.25-1 1 1 0 0 1 .81-.68l5.7-.83 2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12 5.7.83a1 1 0 0 1 .81.68 
-                1 1 0 0 1-.25 1l-4.12 4 1 5.63a1 1 0 0 1-.4 1 1 1 0 0 1-.62.18z">
-                </path>
-            </g></g>
-        </svg>
+    return <div className={starStules.rating }>
+        <input value="5" name="rating" id="star5" type="radio" />
+        <label htmlFor="star5"></label>
+        <input value="4" name="rating" id="star4" type="radio" />
+        <label htmlFor="star4"></label>
+        <input value="3" name="rating" id="star3" type="radio" />
+        <label htmlFor="star3"></label>
+        <input value="2" name="rating" id="star2" type="radio" />
+        <label htmlFor="star2"></label>
+        <input value="1" name="rating" id="star1" type="radio" />
+        <label htmlFor="star1"></label>
     </div>
 }
 

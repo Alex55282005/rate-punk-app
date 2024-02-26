@@ -222,17 +222,6 @@ $uppertext: uppercase;
         }
     }
 }
-.star{
-    fill: white;
-    width: 25px;
-    height: 25px;
-    transition: 0.2s linear;
-
-    &:hover{
-        cursor: pointer;
-        fill: gold;
-    }
-}
 .starRateCont{
     display: flex;
     align-items: center;

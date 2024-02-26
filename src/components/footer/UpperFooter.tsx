@@ -58,9 +58,7 @@ const UpperFooter: FC = () => {
 
             <div className={styles.starBlockCont}>
                 <div className={styles.starRateCont}>
-                    {rating.map((rate) =>{
-                        return <Stars/>
-                    })}
+                    <Stars/>
                 </div>
                 <p>Chrome Store reviews</p>
             </div>
