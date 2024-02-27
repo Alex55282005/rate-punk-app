@@ -37,7 +37,7 @@ const UpperFooter: FC = () => {
             <div className={styles.upperCont}>
             <Link href="https://chrome.google.com/webstore/detail/ratepunk-same-hotel-way-c/gdaioanblcnghddimngklkhgcbomfdck?utm_source=ratepunk">
                 <div className={styles.storeBlock}>
-                    <Image src={AppleImg} alt="AppleImg" width={65} height={57}/>
+                    <Image src={ChromeImg} alt="ChromeImg" width={65} height={57}/>
                     <div>
                         <p>available in the</p>
                         <p>chrome web store</p>
@@ -47,7 +47,7 @@ const UpperFooter: FC = () => {
 
             <Link href="https://apps.apple.com/app/ratepunk/id1607823726">
                 <div className={styles.storeBlock}>
-                    <Image src={ChromeImg} alt="ChromeImg" width={65} height={58}/>
+                    <Image src={AppleImg} alt="AppleImg" width={65} height={58}/>
                     <div>
                         <p>available in the</p>
                         <p>apple app store</p>
