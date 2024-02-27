@@ -8,30 +8,6 @@ import Stars from "../utils/Stars";
 import Link from "next/link";
 
 const UpperFooter: FC = () => {
-
-    const rating = [
-        {
-            id: 0,
-            number: 1
-        },
-        {
-            id: 1,
-            number: 2
-        },
-        {
-            id: 2,
-            number: 3
-        },
-        {
-            id: 3,
-            number: 4
-        },
-        {
-            id: 4,
-            number: 5
-        }
-    ];
-
     return <div className={`${styles.container} ${styles.upperFooter}`}>
         <div className={styles.appContainer}>
             <div className={styles.upperCont}>
